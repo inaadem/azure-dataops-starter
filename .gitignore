@@ -1,20 +1,57 @@
-# Terraform state and backup files
+# ===========================
+# Terraform
+# ===========================
+# Local Terraform working directory
+.terraform/
+
+# Terraform state files (sensitive, never commit)
 *.tfstate
 *.tfstate.*
-*.backup
 
-# Python cache and environment files
+# Backup & crash logs
+*.backup
+crash.log
+
+# Variable definition files (may contain secrets)
+terraform.tfvars
+*.tfvars.json
+
+# ===========================
+# Python
+# ===========================
 __pycache__/
 *.pyc
-.env
-*.env
+*.pyo
+*.pyd
 
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# ===========================
 # Logs
+# ===========================
 *.log
 
-# VS Code settings
+# ===========================
+# Editor / IDE
+# ===========================
 .vscode/
+.idea/
 
-# Other sensitive files
+# ===========================
+# Security / Keys
+# ===========================
 *.key
 *.pem
+
+# ===========================
+# OS / Misc
+# ===========================
+.DS_Store
+Thumbs.db
