@@ -1,4 +1,4 @@
-# Azure Data Engineering & DataOps Project (Student Edition)
+# Azure Data Engineering & DataOps Project 
 
 This project provides a practical, real-world template for deploying a modern data engineering and DataOps solution on Azure using Terraform. 
 ## Features
